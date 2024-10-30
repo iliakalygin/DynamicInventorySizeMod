@@ -43,3 +43,13 @@ data:extend({
         associated_control_input = "dynamic-inventory-size"
     }
 })
+
+-- keyboard shortcut
+data:extend({
+  {
+    type = "custom-input",
+    name = "open_dynamic_inventory_dialog",
+    key_sequence = "CONTROL + SHIFT + D",
+    consuming = "none"
+  }
+})

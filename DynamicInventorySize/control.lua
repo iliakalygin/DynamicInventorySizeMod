@@ -3,17 +3,19 @@ local function create_inventory_gui(player)
         player.gui.center.dynamic_inventory_size_frame.destroy()
     end
 
-
-local frame = player.gui.center.add {
+    local frame = player.gui.center.add {
         type = "frame",
         name = "dynamic_inventory_size_frame",
         direction = "vertical"
     }
 
-    frame.add {
+    local textfield = frame.add {
         type = "textfield",
         name = "dynamic_inventory_size_textfield"
     }
+
+    -- Request focus on the textfield
+    textfield.focus()
 
     frame.add {
         type = "button",
@@ -31,6 +33,14 @@ end
 script.on_event(defines.events.on_lua_shortcut, function(event)
     if event.prototype_name == "dynamic_inventory_size_shortcut" then
         local player = game.get_player(event.player_index)
+        create_inventory_gui(player)
+    end
+end)
+
+-- Event handler for the keyboard shortcut
+script.on_event("open_dynamic_inventory_dialog", function(event)
+    local player = game.get_player(event.player_index)
+    if player then
         create_inventory_gui(player)
     end
 end)
@@ -55,6 +65,5 @@ script.on_event(defines.events.on_gui_click, function(event)
         if frame then
             frame.destroy()
         end
-
     end
 end)
