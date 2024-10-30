@@ -12,7 +12,7 @@
 
 ## How to Use
 
-1. Click the "Dynamic Inventory" icon on the shortcut bar.
+1. Click the "Dynamic Inventory" icon on the shortcut bar (or just ctrl+shift+d).
 2. Enter your desired inventory size in the pop-up text box.
 3. Click "Set Inventory Size" to apply changes.
 4. Enjoy your newly customized inventory!
