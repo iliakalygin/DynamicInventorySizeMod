@@ -1,6 +1,7 @@
 # Dynamic Inventory Size Mod
 
 - Current Version: 1.2.0
+- https://mods.factorio.com/mod/DynamicInventorySize
 
 ## Features
 
