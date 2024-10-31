@@ -20,3 +20,9 @@
 ## Compatibility
 
 This mod should be compatible with most other mods. If you encounter any issues, please let me know in the discussion section.
+
+## Images
+
+![Alt Text](./img/gui.png)
+
+![Alt Text](./img/inventory.png)
