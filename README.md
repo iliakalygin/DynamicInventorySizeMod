@@ -19,4 +19,4 @@
 
 ## Compatibility
 
-This mod should be compatible with most other mods. If you encounter any issues, please let me know in the discussion section.
+This mod should be compatible with most other mods. If you encounter any issues, please let me know.
