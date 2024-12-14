@@ -1,29 +1,7 @@
--- 1.1 --
-
--- data:extend({
---     {
---         type = "shortcut",
---         name = "dynamic_inventory_size_shortcut",
---         action = "lua",
---         toggleable = false,
---         icon = {
---             filename = "__DynamicInventorySize__/graphics/icon.png",
---             priority = "extra-high-no-scale",
---             size = 64,
---             scale = 1,
---             flags = {"icon"}
---         },
---         associated_control_input = "dynamic-inventory-size"
---     }
--- })
-
-
--- 2.0 --
-
 data:extend({
     {
         type = "shortcut",
-        name = "dynamic_inventory_size_shortcut",
+        name = "mod_shortcut",
         action = "lua",
         toggleable = false,
         icons = {
@@ -48,8 +26,10 @@ data:extend({
 data:extend({
   {
     type = "custom-input",
-    name = "open_dynamic_inventory_dialog",
+    name = "open_mod_dialog",
     key_sequence = "CONTROL + SHIFT + D",
     consuming = "none"
   }
 })
+
+require("prototypes.styles")
